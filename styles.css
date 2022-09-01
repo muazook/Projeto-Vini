@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 150px;
+}
+
+body {
+    background-color: #f9fcfd;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 125px;
+    align-items: center;
+    display: flex;
+    background-color: #f9fcfd;
+    border-bottom: 1px solid gray;
+}
+
+#header-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+#nav-bar {
+    display: flex;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#perks {
+    margin-top: 150px;
+    width: fit-content;
+    margin-bottom: 100px;
+}
+
+.perk {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.perk-img {
+    max-height: 100px;
+}
+
+.perk-txt {
+    padding-left: 15px;
+    line-height: 5px;
+}
+
+.left {
+    text-align: left;
+}
+
+#perks, #media, #contact-us {
+    margin-bottom: 100px;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 15px;
+}
+
+input {
+    display: block;
+    margin: 15px auto;
+}
+
+#email {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #00204E;
+}
+
+#submit {
+    height: 30px;
+    width: 150px;
+    color: #f9fcfd;
+    background-color: #00204E;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #00204E;
+}
+
+@media (max-width: 768px) {
+    #nav-bar {
+        width: 75%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #header-img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        margin-left: 0;
+    }
+
+    .perk-img {
+        max-height: 70px;
+    }
+
+    .perk-txt {
+        height: fit-content;
+        line-height: normal;
+    }
+
+    .perk-txt h2 {
+        font-size: 20px;
+    }
+
+    .perk-txt p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .video {
+        margin: 15px;
+        width: 300px;
+        height: 175px;
+    }
+}
