@@ -122,6 +122,17 @@ input {
     border: 1px solid #00204E;
 }
 
+@media (max-width: 1250px) {
+    #nav-bar {
+        width: 50%;
+    }
+
+    .perk-txt p {
+        line-height: 20px;
+        text-align: left;
+    }
+}
+
 @media (max-width: 768px) {
     #nav-bar {
         width: 75%;
